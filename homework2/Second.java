@@ -28,7 +28,7 @@ public class Second {
 		
 			try {			
 				if(i<=0||j<=0||k<=0) {
-					throw new NumberValueException();
+					throw new NumberValueException();	//输入的数据不合法时抛出此异常
 				}
 			}catch(NumberValueException e) {
 				
@@ -37,7 +37,7 @@ public class Second {
 				if(i+j>k&&i+k>j&&k+j>i) {
 					System.out.println("i = ["+i+"],j = ["+j+"],k = ["+k+"]");
 				}else {
-					throw new TriangleException();
+					throw new TriangleException();		//若不能构成三角形就抛出此异常
 				}
 			}catch(TriangleException e) {
 				
