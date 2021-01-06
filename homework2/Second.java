@@ -31,7 +31,7 @@ public class Second {
 					throw new NumberValueException();	//输入的数据不合法时抛出此自定义异常
 				}
 			}catch(NumberValueException e) {
-				
+				//已在此自定义异常中进行输出提示，所以此处不再进行处理
 			}
 			try {				
 				if(i+j>k&&i+k>j&&k+j>i) {
@@ -40,7 +40,7 @@ public class Second {
 					throw new TriangleException();		//若不能构成三角形就抛出此自定义异常
 				}
 			}catch(TriangleException e) {
-				
+				//已在此自定义异常中进行输出提示，所以此处不再进行处理
 			}
 		}catch(InputMismatchException e) {
 			e.printStackTrace();
