@@ -34,7 +34,7 @@ public class First {
 		}catch(ArithmeticException e) {
 			e.printStackTrace();
 		}finally {
-			sc.close();
+			sc.close(); //结束控制台输入流以防内存泄漏
 		}
 	}
 }
