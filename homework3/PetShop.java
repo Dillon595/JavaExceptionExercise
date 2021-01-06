@@ -19,9 +19,9 @@ public class PetShop {
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
-		}finally {
+		}finally {		//finally关键字代码块中的语句 不管异常与否都会执行
 			System.out.println("欢迎下次光临！！！");
 		}
-		return null;
+		return null;		//因此方法有返回值，若输入的类型错误以后则返回null
 	}
 }
