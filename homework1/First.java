@@ -29,9 +29,9 @@ public class First {
 			int index = sc.nextInt();
 			int divisor = sc.nextInt();
 			System.out.println("结果为："+arr[index]/divisor);
-		}catch(ArrayIndexOutOfBoundsException e) {
+		}catch(ArrayIndexOutOfBoundsException e) {//数组下标越界异常  输入的数字小于或大于数组的下标
 			e.printStackTrace();
-		}catch(ArithmeticException e) {
+		}catch(ArithmeticException e) {//算术异常 分母为1时
 			e.printStackTrace();
 		}finally {
 			sc.close(); //结束控制台输入流以防内存泄漏
